@@ -2,6 +2,15 @@
 
 The proposed framework facilitates to incorporate interactive user choice in terms of including or excluding the
 particular type of content. Our approach can also be adapted to generate summaries of various lengths making it possible to view even 1-minute summaries of one’s entire day. When using the facial saliency-based reward, we show that our approach generates summaries focusing on social interactions, similar to the current state-of-the-art (SOTA).
+
+## Requirements
+The code has been tested on:
+
+Nvidia P5000 GPU
+Ubuntu 16.04 LTS
+Pytorch v1.4.0
+CUDA 9.0
+
 ## Get started
 Extract C3D features of Disney, UTE and HUJI dataset. or you can downlaod from https://pravin74.github.io/Int-sum/index.html
 
