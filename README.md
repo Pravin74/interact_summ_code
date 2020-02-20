@@ -1,87 +1,20 @@
 # Generating Personalized Video Summaries of Day Long Egocentric Videos
 
-One Paragraph of project description goes here
+The proposed framework facilitates to incorporate interactive user choice in terms of including or excluding the
+particular type of content. Our approach can also be adapted to generate summaries of various lengths making it possible to view even 1-minute summaries of one’s entire day. When using the facial saliency-based reward, we show that our approach generates summaries focusing on social interactions, similar to the current state-of-the-art (SOTA).
+## Get started
+Extract C3D features of Disney, UTE and HUJI dataset. or you can downlaod from https://pravin74.github.io/
 
-## Getting Started
+## How to generate summaries
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
-
-### Prerequisites
-
-What things you need to install the software and how to install them
-
+Create all the folders in the main directory.
+Just Run GUI.py. Select the appropriate dataset and corresponding video and click on 'Generate summary without feedback'. You will get the normal summary(video summary and a text file of selected frames) in 'output_summary_with_feedback' folder. Then you have to look at the generated summary (without feedback) and select the events you want to include or exclude. Just put the time intervals of the selected positive and negative events in the GUI in MM:SS MM:SS format. 
+After clicking the on 'Generate Summary with feedback' you will get a customized summary in 'output_summary_with_feedback' folder.  In 'plot_comparison' folder you will get the plots of summary with feedback and without feedback for comparison.
+## Citation
 ```
-Give examples
+@inproceedings{rathore2019generating,
+	title={Generating 1 Minute Summaries of Day Long Egocentric Videos},
+	author={Rathore, Anuj and Nagar, Pravin and Arora, Chetan and Jawahar, CV},
+	booktitle={ACMMM},
+	year={2019}
 ```
-
-### Installing
-
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
-## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
-## Authors
-
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
