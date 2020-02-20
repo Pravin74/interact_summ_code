@@ -6,10 +6,10 @@ particular type of content. Our approach can also be adapted to generate summari
 ## Requirements
 The code has been tested on:
 
-Nvidia P5000 GPU
-Ubuntu 16.04 LTS
-Pytorch v1.4.0
-CUDA 9.0
+- Nvidia P5000 GPU
+- Ubuntu 16.04 LTS
+- Pytorch v1.4.0
+- CUDA 9.0
 
 ## Get started
 Extract C3D features of Disney, UTE and HUJI dataset. or you can downlaod from https://pravin74.github.io/Int-sum/index.html
