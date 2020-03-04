@@ -12,12 +12,12 @@ The code has been tested on:
 - CUDA 9.0
 
 ## Get started
-Extract C3D features of Disney, UTE and HUJI dataset. or you can downlaod from https://pravin74.github.io/Int-sum/index.html
+Extract C3D features of Disney, UTE and HUJI dataset or you can downlaod from https://pravin74.github.io/Int-sum/index.html
 
 ## How to generate summaries
 
-Create all the folders in the main directory.
-Just Run GUI.py. Select the appropriate dataset and corresponding video and click on 'Generate summary without feedback'. You will get the normal summary(video summary and a text file of selected frames) in 'output_summary_with_feedback' folder. Then you have to look at the generated summary (without feedback) and select the events you want to include or exclude. Just put the time intervals of the selected positive and negative events in the GUI in MM:SS MM:SS format. 
+Download the h5 file of all the datasets in "datasets" folder from above link.
+Run GUI.py. Select the appropriate dataset and corresponding video and click on 'Generate summary without feedback'. You will get the normal summary(video summary and a text file of selected frames) in 'output_summary_with_feedback' folder. Then you have to look at the generated summary (without feedback) and select the events you want to include or exclude. Just put the time intervals of the selected positive and negative events in the GUI in MM:SS MM:SS format. 
 After clicking the on 'Generate Summary with feedback' you will get a customized summary in 'output_summary_with_feedback' folder.  In 'plot_comparison' folder you will get the plots of summary with feedback and without feedback for comparison.
 ## Citation
 ```
