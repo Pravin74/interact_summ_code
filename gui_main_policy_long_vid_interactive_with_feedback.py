@@ -24,6 +24,7 @@ from tqdm import tqdm
 import csv
 import random
 
+
 def epoch_plot(epoch , y , save_file):
     x=[]
     for i in range(epoch):
@@ -122,6 +123,9 @@ np.random.seed(seed=5)
 
 def generate_summary_with_feedback(dataset_name, video_name, normal_summary_path, positive_feedback_idxes, negative_feedback_idxes):
     #Hyperparas
+    if not os.path.exists('plot_comparison'):
+        os.makedirs('plot_comparison')
+
     print ('Hidden Units in LSTM:   ' + str(hidden_dim))
     summary_length = 600
     subshot_length = 200

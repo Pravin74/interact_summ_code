@@ -139,9 +139,10 @@ class Ui_Dialog(object):
             print("Please select dataset and video_name")
             pass
         else:
-            #self.normal_summary_path = generate_normal_summary(self.dataset, self.video_name)
-            self.normal_summary_path = 'output_summary_without_feedback/Alin_Day_1.mp4_Disney_policy_grad_summary_length_600_subshot_size_200_hidden_dim_256_summary_without_feedback.txt'
-            #generate_video_from_summary(self.normal_summary_path, self.dataset, self.video_name)
+            self.normal_summary_path = generate_normal_summary(self.dataset, self.video_name)
+            #self.normal_summary_path = 'output_summary_without_feedback/Alin_Day_1.mp4_Disney_policy_grad_summary_length_600_subshot_size_200_hidden_dim_256_summary_without_feedback.txt'
+
+            generate_video_from_summary(self.normal_summary_path, self.dataset, self.video_name) # you can comment this line if don't want to generate video otherwise give the video path in 'gui_generate_video_from_summary.py' file to generate summary video.
             print ('Normal Summary Generated:  ', self.normal_summary_path)
 
 
@@ -181,7 +182,7 @@ class Ui_Dialog(object):
 
         customized_summary_path = generate_summary_with_feedback(self.dataset, self.video_name, self.normal_summary_path, positive_feedback_idxes_to_vid, negative_feedback_idxes_to_vid)
         #customized_summary_path = 'output_summary_with_feedback/Alin_Day_1.mp4_Disney_policy_grad_summary_length_600_subshot_size_200_hidden_dim_256_summary_with_feedback_krishan.txt'
-        generate_video_from_summary(customized_summary_path, self.dataset, self.video_name)
+        generate_video_from_summary(customized_summary_path, self.dataset, self.video_name) # you can comment this line if don't want to generate video otherwise give the video path in 'gui_generate_video_from_summary.py' file to generate summary video.
         plot_normal_and_custom_summary(self.normal_summary_path, customized_summary_path)
         print ('---------------Customized Summary Generated-------------------------')
 

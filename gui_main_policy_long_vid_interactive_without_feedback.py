@@ -122,6 +122,10 @@ np.random.seed(seed=5)
 
 def generate_normal_summary(dataset_name, video_name):
     #Hyperparas
+
+    if not os.path.exists('log'):
+        os.makedirs('log')
+        
     print ('Hidden Units in LSTM:   ' + str(hidden_dim))
     summary_length = 600
     subshot_length = 200
