@@ -7,9 +7,9 @@ particular type of content. Our approach can also be adapted to generate summari
 The code has been tested on:
 
 - Nvidia P5000 GPU
-- Ubuntu 16.04 LTS
+- Ubuntu 16.04 LTS & UBUNTU 18.04 LTS
 - Pytorch v1.4.0
-- CUDA 9.0
+- CUDA 9.0 & CUDA 10.1
 
 ## Get started
 Extract C3D features of Disney, UTE and HUJI dataset or you can download from https://pravin74.github.io/Int-sum/index.html
